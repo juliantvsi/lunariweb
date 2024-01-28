@@ -7,7 +7,7 @@ export default function () {
   const [ statusCode, setStatusCode ] = useState(null);
 
   function fetchingApi(){
-    fetch(`http://localhost:4000/validate/${token}`)
+    fetch(`https://lunariweb.vercel.app/validate/${token}`)
     .then((response) => {
       setStatusCode(response.status)
       return response.json()
