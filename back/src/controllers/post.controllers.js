@@ -19,7 +19,7 @@ export async function registerUser(req, res) {
     const encodedToken = base64.encode(token);
 
     // Crea el enlace de validación
-    const validationLink = `http://localhost:5173/validate/${encodedToken}`;
+    const validationLink = `https://lunariweb.vercel.app/validate/${encodedToken}`;
 
     // Crea un nuevo usuario con la contraseña hasheada y el token
     const newUser = new User({ name, email, password: hashedPassword, token, validated });
