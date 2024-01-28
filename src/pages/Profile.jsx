@@ -7,8 +7,6 @@ export default function Profile(){
      <LoginBar />
      <Logo />
      <Navbar />
-
-     
     </>
   )
 }

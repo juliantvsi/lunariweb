@@ -60,4 +60,4 @@ export const doPasswordsMatch = (password, confirmPassword) => {
 
 /* ------------------- */
 
-export const urlFetch = 'http://localhost:4000/'
+export const urlFetch = 'https://lunariweb.vercel.app/'
