@@ -19,7 +19,6 @@ import IntoSections from "./IntoSections";
 import Footer from "./Footer";
 import Filters from "./Filters";
 import PageTransition from "./PageTransition";
-import Form from "./Form";
 import EmailRegisterTemplate from "./EmailRegisterTemplate";
 import TemporaryMessage from "./TemporaryMessage";
 import RegisterForm from "./RegisterForm";
@@ -48,7 +47,6 @@ export {
   Footer,
   Filters,
   PageTransition,
-  Form,
   EmailRegisterTemplate,
   TemporaryMessage,
   RegisterForm,
