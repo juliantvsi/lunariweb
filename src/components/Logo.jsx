@@ -7,7 +7,7 @@ export default function (){
   return(
     <BannerContainer>
       <Link to='/'>
-        <img src="/src/assets/images/logo/logo.png" alt="Logotipo de la marca Lunari" />
+        <img src="https://previews.123rf.com/images/aprillrain/aprillrain2212/aprillrain221200638/196354278-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustraci%C3%B3n-de-alta-calidad.jpg" alt="Logotipo de la marca Lunari" />
       </Link>
       <Icons>
         <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
