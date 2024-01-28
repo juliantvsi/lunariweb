@@ -8,6 +8,7 @@ export default function (){
     <BannerContainer>
       <Link to='/'>
         <Logo src={`${process.env.PUBLIC_URL}/assets/images/logo/logo.png`} alt="Logotipo de la marca Lunari" />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/logo/logo.png`} alt="no se" />
       </Link>
       <Icons>
         <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
