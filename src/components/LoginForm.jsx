@@ -149,7 +149,7 @@ export default function LoginForm({ handleInputChange }) {
       setTimeout(() => setShowMessage(false), 1500);
       return
     }
-    fetch('https://lunari-cyan.vercel.app/login', {
+    fetch('https://lunariweb.vercel.app/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

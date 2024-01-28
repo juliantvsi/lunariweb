@@ -190,7 +190,7 @@ export default function RegisterForm({handleInputChange}){
       return
     }
     
-    fetch('https://lunari-cyan.vercel.app/register', {
+    fetch('https://lunariweb.vercel.app/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
