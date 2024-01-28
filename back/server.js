@@ -17,8 +17,8 @@ app.use(express.json());
 
 //Cors
 app.use(cors({
-  origin: 'http://localhost:5173', // Reemplaza con tu dominio de frontend
-  optionsSuccessStatus: 200 // Opcional: devuelve el código de estado 200 para las solicitudes OPTIONS
+  origin: 'https://lunariweb.vercel.app/', 
+  optionsSuccessStatus: 200 
 }));
 
 //Routes
