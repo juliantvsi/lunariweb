@@ -26,4 +26,4 @@ app.use(homeRoute);
 app.use(getRoutes); 
 app.use(postRoutes);
 
-app.listen(PORT, ()=> console.log('server mount'))
+app.listen(PORT || 4000, ()=> console.log('server mount'))
