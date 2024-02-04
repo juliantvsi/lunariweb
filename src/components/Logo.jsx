@@ -7,7 +7,7 @@ export default function (){
   return(
     <BannerContainer>
       <Link to='/'>
-          <img src="/public/assets/images/logo/vite.svg" alt="Logotipo de la marca" />
+          <img src="https://pbs.twimg.com/profile_banners/38424468/1697572236/600x200" alt="Logotipo de la marca" />
       </Link>
       <Icons>
         <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
