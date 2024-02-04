@@ -7,7 +7,7 @@ export default function (){
   return(
     <BannerContainer>
       <Link to='/'>
-        <img src="/public/assets/images/logo/logo.png" alt="Logotipo de la marca Lunari" />
+          <img src="/public/assets/images/logo/vite.svg" alt="Logotipo de la marca" />
       </Link>
       <Icons>
         <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
