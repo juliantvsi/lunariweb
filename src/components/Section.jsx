@@ -28,7 +28,7 @@ export default function Section({title, category, order}){
         try {
           const queryParams = new URLSearchParams(location.search);
           const query = queryParams.get('query');
-          const response = await fetch(`${urlFetch}search?query=${query}`);
+          const response = await fetch(`${urlFetch}/search?query=${query}`);
           if (!response.ok) throw new Error('Error in the request');
           const searchResult = await response.json();
           setProductList(searchResult);

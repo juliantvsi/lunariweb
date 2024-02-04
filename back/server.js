@@ -17,7 +17,7 @@ app.use(express.json());
 
 //Cors
 app.use(cors({
-  origin: 'https://lunariweb.vercel.app/', 
+  origin: 'https://lunariweb.vercel.app', 
   optionsSuccessStatus: 200 
 }));
 

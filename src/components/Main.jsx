@@ -16,7 +16,6 @@ export default function MyComponent() {
       {isActive && <Detail />}
       {path === "/" && (
         <>
-          <EmailRegisterTemplate />
           <StyledMain>
             <Section title="Top rated" category="topRated" />
           </StyledMain>
