@@ -2,7 +2,7 @@
 import { StyledTitle, ProductsContainer, Loader, LoaderContainer } from '../styles/shared-styles';
 import { SectionContainer } from '../styles/Section';
 /* Api and data */
-import { urlFetch } from '../shared-functions';
+//import { urlFetch } from '../shared-functions';
 /* Components and functions */
 import { ProductBox, ContentNotFound } from '../components';
 /* State and React */
@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 /* ----- */
 
 export default function Section({title, category, order}){
+  const urlFetch = 'https://localhost:5173'
   const [isLoading, setIsLoading] = useState(true);
   const [productList, setProductList] = useState(null);
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ export default function Section({title, category, order}){
         }
       } else if (category === 'topRated') {
         try {
-          const response = await fetch(`${urlFetch}top-rated`)
+          const response = await fetch(`${urlFetch}/top-rated`)
           if (!response.ok) throw new Error('Error in the request');
           const topRated = await response.json();
           setProductList(topRated);
@@ -48,7 +49,7 @@ export default function Section({title, category, order}){
         }
       } else if (category === 'bestSellers') {
         try {
-          const response = await fetch(`${urlFetch}bestsellers`)
+          const response = await fetch(`${urlFetch}/bestsellers`)
           if (!response.ok) throw new Error('Error in the request');
           const bestSellers = await response.json();
           setProductList(bestSellers);
@@ -61,7 +62,7 @@ export default function Section({title, category, order}){
         setIsLoading(false)
       } else {
         try {
-          const response = await fetch(`${urlFetch}products/${category}`);
+          const response = await fetch(`${urlFetch}/products/${category}`);
           if (!response.ok) throw new Error('Error in the request');
           const result = await response.json();
           setProductList(result);
@@ -141,4 +142,3 @@ export default function Section({title, category, order}){
     </SectionContainer>
   );
 }
-

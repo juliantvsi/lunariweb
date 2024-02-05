@@ -7,7 +7,7 @@ import postRoutes from './src/routes/post.routes.js';
 import cors from 'cors';
 
 dontenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT
 
 const app = express();
 connectDB();
@@ -17,13 +17,13 @@ app.use(express.json());
 
 //Cors
 app.use(cors({
-  origin: 'https://lunariweb.vercel.app', 
-  optionsSuccessStatus: 200 
-}));
+  origin: ['https://localhost:5173', 'http://localhost:4000'],
+  optionsSuccessStatus: 200
+}))
 
 //Routes
 app.use(homeRoute);
 app.use(getRoutes); 
 app.use(postRoutes);
 
-app.listen(PORT || 4000, ()=> console.log('server mount'))
+app.listen(PORT || 5173, ()=> console.log('server mount'))

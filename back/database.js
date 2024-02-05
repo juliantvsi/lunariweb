@@ -8,7 +8,7 @@ const connectDB = async () => {
     const DB_URI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.npe2bti.${process.env.DATABASE}?retryWrites=true&w=majority`;
 
     await mongoose.connect(DB_URI);
-    console.log('Conectado a MongoDB');
+    console.log('Conected to MongoDB');
   } catch (error) {
     console.error(error);
   }
