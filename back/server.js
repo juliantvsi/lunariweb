@@ -17,9 +17,10 @@ app.use(express.json());
 
 //Cors
 app.use(cors({
-  origin: ['https://localhost:5173', 'http://localhost:4000'],
+  origin: ['https://lunariweb-9qib1x22q-juliantvsis-projects.vercel.app', 'http://localhost:5173', 'https://lunariweb-9qib1x22q-juliantvsis-projects.vercel.app:443'],
   optionsSuccessStatus: 200
-}))
+}));
+
 
 //Routes
 app.use(homeRoute);

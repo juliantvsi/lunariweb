@@ -2,7 +2,7 @@
 import { StyledTitle, ProductsContainer, Loader, LoaderContainer } from '../styles/shared-styles';
 import { SectionContainer } from '../styles/Section';
 /* Api and data */
-//import { urlFetch } from '../shared-functions';
+import { urlFetch } from '../shared-functions';
 /* Components and functions */
 import { ProductBox, ContentNotFound } from '../components';
 /* State and React */
@@ -13,7 +13,6 @@ import { useLocation } from "react-router-dom";
 /* ----- */
 
 export default function Section({title, category, order}){
-  const urlFetch = 'https://localhost:5173'
   const [isLoading, setIsLoading] = useState(true);
   const [productList, setProductList] = useState(null);
   const dispatch = useDispatch();
